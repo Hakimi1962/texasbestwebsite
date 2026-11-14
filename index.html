@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Best Biel</title>
+<meta name="description" content="Texas Best in Biel/Bienne: Pacos, Burritos und Pizza, frisch auf Bestellung. Online zur Abholung bestellen am Unteren Quai 76.">
+<link rel="canonical" href="https://hakimi1962.github.io/texasbestwebsite/">
+<meta property="og:title" content="Texas Best Biel – Home of Pizza &amp; Paco">
+<meta property="og:description" content="Pacos, Burritos und Pizza in Biel/Bienne. Online zur Abholung bestellen.">
+<meta property="og:url" content="https://hakimi1962.github.io/texasbestwebsite/">
+<meta property="og:type" content="restaurant">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Texas Best", "url": "https://hakimi1962.github.io/texasbestwebsite/", "slogan": "Home of Pizza & Paco", "telephone": "+41325368336", "servesCuisine": ["Pacos", "Burritos", "Pizza"], "priceRange": "CHF", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "11:00", "closes": "14:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "17:00", "closes": "23:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "11:00", "closes": "14:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "17:00", "closes": "23:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "11:00", "closes": "14:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "17:00", "closes": "23:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "14:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "17:00", "closes": "23:59"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "23:59"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "17:00", "closes": "23:59"}], "address": {"@type": "PostalAddress", "streetAddress": "Unterer Quai 76", "postalCode": "2502", "addressLocality": "Biel/Bienne", "addressCountry": "CH"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&family=Barlow+Condensed:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+<style>:root{
+  /* Layout idea: the page is the restaurant's red wall; each menu section is one of the white menu screens hanging on it. Single theme by choice, colours taken from the logo and the menu boards. */
+  color-scheme: light;
+  --red:#a41c18;
+  --red-hot:#c9302c;
+  --ink:#1b2238;
+  --screen:#fbf9f5;
+  --muted:#5b6275;
+  --orange:#e08a2e;
+  --green:#3d8c5c;
+  --blue:#2f6fb5;
+  --line:#c9c5bb;
+  --display:"Anton", Impact, "Arial Narrow", sans-serif;
+  --label:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --body:"Barlow", "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--red);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+h1,h2,h3,p{margin:0}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px 20px;flex-wrap:wrap;padding:12px 20px;color:#fff;font-family:var(--label);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.top nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+.top a{text-decoration:none}
+.top a:hover{text-decoration:underline}
+.lang{display:flex;border:2px solid #fff;border-radius:6px;overflow:hidden}
+.lang button{font:inherit;letter-spacing:.1em;background:none;color:#fff;border:0;padding:3px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--red)}
+
+.hero{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;padding:28px 20px 44px;color:#fff}
+.hero h1 img{display:block;width:min(100%,560px);height:auto}
+.where{font-family:var(--label);font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.btn{font-family:var(--label);font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:12px 20px;border:2px solid #fff;border-radius:999px;transition:transform .15s}
+.btn.solid{background:#fff;color:var(--red)}
+.btn:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}html{scroll-behavior:auto}}
+
+/* Brush banner, as on the menu boards */
+.brush{display:inline-block}
+.brush span{display:inline-block;font-family:var(--label);font-style:italic;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--red-hot);padding:6px 26px 7px;transform:rotate(-1.5deg);clip-path:polygon(2% 12%,12% 0,30% 8%,52% 0,74% 7%,97% 2%,100% 38%,96% 62%,100% 92%,80% 100%,58% 93%,34% 100%,14% 94%,0 100%,3% 60%,0 34%)}
+.hero .brush span{background:#fff;color:var(--red);font-size:1.3rem}
+.brush.sm{margin:6px 0 26px}
+
+main{display:grid;gap:28px;max-width:1080px;margin:0 auto;padding:0 16px}
+.panel{background:var(--screen);border:8px solid var(--ink);border-radius:10px;padding:28px 28px 30px;scroll-margin-top:12px}
+.panel h2{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,7vw,4.2rem);line-height:1;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px 44px}
+.group{margin-bottom:26px}
+.group h3,.visit h3{display:inline-block;font-family:var(--display);font-weight:400;font-size:1.6rem;text-transform:uppercase;letter-spacing:.02em;padding-bottom:2px;margin-bottom:6px;border-bottom:3px solid var(--red-hot)}
+h3.u-green{border-color:var(--green)}
+
+.row{display:grid;gap:2px 10px;align-items:baseline;padding:9px 0;border-bottom:2px dotted var(--line)}
+.row.c1{grid-template-columns:1fr 4rem}
+.row.c2{grid-template-columns:1fr repeat(2,5.4rem)}
+.row.c3{grid-template-columns:1fr repeat(3,4.2rem)}
+.row.head{border-bottom:0;padding:4px 0 2px;align-items:end}
+.col{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-family:var(--label);font-weight:600;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.name{font-family:var(--label);font-weight:600;font-size:1.3rem;text-transform:uppercase;letter-spacing:.03em;line-height:1.2}
+.name.sm{font-family:var(--body);font-weight:500;font-size:1rem;text-transform:none;letter-spacing:0;line-height:1.4}
+.desc{display:block;font-family:var(--body);font-weight:400;font-size:.92rem;text-transform:none;letter-spacing:0;color:var(--muted)}
+.price{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.dot{display:inline-grid;place-items:center;min-width:1.9rem;height:1.9rem;padding:0 .3rem;border-radius:999px;color:#fff;font-family:var(--label);font-weight:600;font-size:1rem;letter-spacing:0;background:var(--orange)}
+.dot.d2{background:var(--red-hot)}.dot.d3{background:var(--green)}.dot.d4{background:var(--blue)}
+.extra{display:inline-block;font-family:var(--label);font-weight:600;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase;background:#e6ecd9;border-radius:999px;padding:6px 20px;margin-bottom:16px}
+.note{font-size:.92rem;color:var(--muted);max-width:60ch}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.step{border:2px solid var(--line);border-radius:14px;padding:14px 16px}
+.step h3{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:400;font-size:1.4rem;text-transform:uppercase;margin-bottom:8px}
+.step ul{margin:0;padding-left:1.1em}
+.step li{margin:3px 0}
+.sizes{display:flex;flex-wrap:wrap;align-items:center;gap:14px 34px;margin-top:18px;border:2px solid var(--line);border-radius:14px;padding:14px 18px}
+.sizes div{display:flex;align-items:center;gap:8px;font-family:var(--label);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.sizes strong{font-family:var(--display);font-weight:400;font-size:1.6rem;letter-spacing:.02em}
+.sizes p{flex:1 1 260px;color:var(--muted);font-size:.95rem}
+
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:22px}
+.big{font-size:1.2rem;font-weight:600}
+.badges{display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;margin:28px 0 0;padding:14px 18px;border:2px solid var(--line);border-radius:14px;font-family:var(--label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+footer{padding:36px 20px 44px;text-align:center;color:#fff;font-family:var(--label);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+
+@media (max-width:560px){
+  .panel{padding:20px 16px 22px;border-width:6px}
+  .row.c2{grid-template-columns:repeat(2,1fr)}
+  .row.c3{grid-template-columns:repeat(3,1fr)}
+  .row.c2 > :first-child,.row.c3 > :first-child{grid-column:1 / -1}
+  .row.head > :first-child{display:none}
+  .row.c2 .price,.row.c3 .price{text-align:left}
+  .row.c2 .col,.row.c3 .col{align-items:flex-start}
+}
+
+#mehr h2{margin-bottom:22px}
+.row.c2{grid-template-columns:1fr repeat(2,6rem)}
+
+/* ---------- Kopfbereich: Gewürzstaub, Auftritt, Städte-Laufband ---------- */
+.hero{position:relative;overflow:hidden;padding:36px 20px 64px;background:radial-gradient(ellipse at 50% 35%, #c2241f 0%, var(--red) 62%)}
+.hero > *{position:relative}
+#spice{position:absolute;inset:0;width:100%;height:100%}
+.hero h1{animation:pop .7s cubic-bezier(.2,1.5,.4,1) both}
+.hero .brush{animation:wipe .6s .35s ease-out both}
+.hero .pitch,.hero .actions,.hero .where{animation:rise .5s .6s ease-out both}
+.pitch{max-width:34ch;font-size:1.25rem;font-weight:500;text-wrap:balance}
+.btn.big{font-size:1.25rem;padding:15px 30px;box-shadow:0 6px 0 rgba(0,0,0,.25)}
+.btn.big:hover{transform:translateY(-3px) rotate(-1deg)}
+@keyframes pop{from{transform:scale(.7) rotate(-4deg)}to{transform:none}}
+@keyframes wipe{from{transform:scaleX(.3) rotate(-6deg)}to{transform:none}}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+
+.marquee{position:relative;z-index:1;overflow:hidden;background:var(--ink);color:#fff;transform:rotate(-1.5deg);width:104%;margin:-26px -2% 34px;padding:8px 0;box-shadow:0 8px 0 rgba(0,0,0,.18)}
+.track{display:flex;width:max-content;animation:slide 38s linear infinite}
+.track span{font-family:var(--display);font-size:clamp(1.6rem,4vw,2.4rem);text-transform:uppercase;letter-spacing:.03em;padding:0 22px;white-space:nowrap}
+.track span::after{content:"★";color:var(--orange);margin-left:44px;font-size:.6em;vertical-align:middle}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- Preise als Knöpfe ---------- */
+button.add{font:inherit;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink);background:none;border:2px solid transparent;border-radius:999px;padding:3px 9px;margin:-3px -9px -3px 0;cursor:pointer;justify-self:end;transition:background .15s,color .15s,transform .15s}
+button.add:hover{background:var(--red-hot);color:#fff;transform:scale(1.08)}
+button.add.hit{animation:hit .45s ease-out}
+@keyframes hit{0%{background:var(--green);color:#fff;transform:scale(1.25)}100%{transform:none}}
+.extra button.add{margin:0 0 0 6px;border-color:var(--ink)}
+.row{transition:background .15s}
+.row:not(.head):hover{background:rgba(201,48,44,.06)}
+
+/* ---------- Burrito-Baukasten ---------- */
+.builder{display:grid;gap:16px}
+.builder .sizes{margin-top:0}
+.size{display:flex;align-items:center;gap:8px;font-family:var(--label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;padding:6px 14px 6px 8px;border:2px solid transparent;border-radius:999px}
+.size input{position:absolute;opacity:0;width:1px;height:1px}
+.size:has(input:checked){border-color:var(--ink);background:#fff}
+.size:has(input:focus-visible){outline:3px solid var(--orange);outline-offset:3px}
+.size strong{font-family:var(--display);font-weight:400;font-size:1.6rem}
+fieldset.step{margin:0;min-width:0}
+.step legend{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.4rem;text-transform:uppercase;padding:0 6px}
+.opt{display:flex;align-items:center;gap:8px;padding:4px 0;cursor:pointer}
+.opt input{width:1.1rem;height:1.1rem;accent-color:var(--red-hot);flex:none}
+.opt:has(input:disabled){opacity:.45;cursor:default}
+.opt.plus{margin-top:8px;padding-top:10px;border-top:2px dotted var(--line)}
+.hint{font-size:.9rem;color:var(--muted);margin-top:6px}
+.sel{display:block;font-size:.9rem;color:var(--muted);margin:8px 0 3px}
+select,input[type=text],input[type=tel],textarea{font:inherit;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:10px;padding:9px 11px;width:100%}
+.btn-add{display:inline-block;justify-self:start;font-family:var(--label);font-weight:600;font-size:1.15rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;text-align:center;color:#fff;background:var(--red-hot);border:0;border-radius:999px;padding:13px 26px;cursor:pointer;box-shadow:0 5px 0 #7d1512;transition:transform .15s}
+.btn-add:hover{transform:translateY(-2px)}
+
+/* ---------- Bestellung ---------- */
+.order{border-color:var(--orange)}
+.cart-list{list-style:none;margin:0;padding:0}
+.cart-list li{display:grid;grid-template-columns:1fr auto 4.2rem;gap:10px;align-items:center;padding:10px 0;border-bottom:2px dotted var(--line)}
+.ci-name{font-weight:500}
+.ci-qty{display:flex;align-items:center;gap:8px}
+.ci-qty button{font:inherit;font-weight:600;width:1.9rem;height:1.9rem;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.ci-qty b{min-width:1.2rem;text-align:center;font-variant-numeric:tabular-nums}
+.ci-price{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;font-family:var(--display);font-size:1.6rem;text-transform:uppercase}
+.total strong{font-weight:400}
+.order-form{display:grid;gap:6px;align-content:start}
+.order-form label{font-family:var(--label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
+.order-form .btn-add{justify-self:stretch;margin-top:12px}
+.err{color:var(--red);font-weight:600;min-height:1.4em}
+.err:empty{min-height:0}
+
+.cartbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:10;display:flex;justify-content:space-between;gap:24px;width:min(560px,calc(100% - 24px));padding:13px 22px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-family:var(--label);font-weight:600;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.cartbar[hidden]{display:none}
+.cartbar b{display:inline-grid;place-items:center;min-width:1.6rem;height:1.6rem;border-radius:999px;background:var(--orange);color:var(--ink)}
+.cartbar.bump{animation:bump .4s ease-out}
+@keyframes bump{40%{transform:translateX(-50%) scale(1.06)}}
+footer{padding-bottom:96px}
+
+@media (max-width:560px){
+  button.add{justify-self:start;margin:-3px 0 -3px -9px}
+  .row.c1 button.add{justify-self:end;margin:-3px -9px -3px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero h1,.hero .brush,.hero .pitch,.hero .actions,.hero .where,.track,button.add.hit,.cartbar.bump{animation:none}
+  button.add,.btn-add{transition:none}
+}
+
+.hr{display:flex;justify-content:space-between;gap:16px;padding:3px 0;border-bottom:2px dotted var(--line)}
+.hr b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.hr .closed{color:var(--red)}
+
+@media (max-width:560px){.hero{padding-bottom:84px}}
+
+.sub{margin:2px 0 4px 1.9rem;padding-left:10px;border-left:3px solid var(--green)}
+.sub[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="top">
+  <nav aria-label="Navigation">
+    <a href="#pacos">Pacos</a><a href="#burrito">Burrito</a><a href="#pizza">Pizza</a><a href="#mehr" data-fr="Snacks &amp; boissons" data-it="Snack e bevande">Snacks &amp; Getränke</a><a href="#bestellen" data-fr="Commander" data-it="Ordina">Bestellen</a><a href="#besuch" data-fr="Nous trouver" data-it="Dove siamo">Besuch</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Sprache / Langue">
+    <button type="button" id="lang-de" aria-pressed="true">DE</button><button type="button" id="lang-fr" aria-pressed="false">FR</button><button type="button" id="lang-it" aria-pressed="false">IT</button>
+  </div>
+</header>
+
+<div class="hero">
+  <canvas id="spice" aria-hidden="true"></canvas>
+  <h1><img src="data:image/png;base64,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" alt="Texas Best – Home of Pizza &amp; Paco" width="487" height="151"></h1>
+  <p class="brush"><span data-fr="Frais. Individuel. Unique." data-it="Fresco. Su misura. Unico.">Frisch. Individuell. Einzigartig.</span></p>
+  <div class="actions">
+    <a class="btn solid big" href="#pacos" data-fr="Commander à l'emporter" data-it="Ordina per il ritiro">Zur Abholung bestellen</a>
+    <a class="btn" href="tel:+41325368336">032 536 83 36</a>
+  </div>
+  <p class="where">Unterer Quai 76 · Biel/Bienne</p>
+</div>
+<div class="marquee" aria-hidden="true"><div class="track"><span>Texas</span><span>Guadalajara</span><span>Shanghai</span><span>Istanbul</span><span>Oslo</span><span>London</span><span>Athen</span><span>Beirut</span><span>Tokyo</span><span>California</span><span>Biel/Bienne</span><span>Texas</span><span>Guadalajara</span><span>Shanghai</span><span>Istanbul</span><span>Oslo</span><span>London</span><span>Athen</span><span>Beirut</span><span>Tokyo</span><span>California</span><span>Biel/Bienne</span></div></div>
+
+<main>
+<section class="panel" id="pacos">
+  <h2>Pacos</h2>
+  <p class="brush sm"><span data-fr="Touche un prix pour l'ajouter au panier." data-it="Tocca un prezzo e finisce nel carrello.">Tippe auf einen Preis und er landet im Warenkorb.</span></p>
+  <div class="cols">
+    <div><div class="group"><h3 class="u-red">Classical</h3><div class="row head c3"><span></span><span class="col"><b class="dot d1">1</b><span data-fr="1 paco">1 Paco</span></span><span class="col"><b class="dot d2">2</b><span data-fr="2 pacos">2 Pacos</span></span><span class="col"><b class="dot d3">3</b><span data-fr="3 pacos">3 Pacos</span></span></div><div class="row c3"><span class="name">Mexicana<span class="desc" data-fr="Au poulet" data-it="Con pollo">Mit Poulet</span></span><button type="button" class="price add" data-n="Paco Mexicana · 1 Stück" data-p="7.50" aria-label="Paco Mexicana · 1 Stück, CHF 7.50">7.50</button><button type="button" class="price add" data-n="Paco Mexicana · 2 Stück" data-p="14.00" aria-label="Paco Mexicana · 2 Stück, CHF 14.00">14.00</button><button type="button" class="price add" data-n="Paco Mexicana · 3 Stück" data-p="20.00" aria-label="Paco Mexicana · 3 Stück, CHF 20.00">20.00</button></div><div class="row c3"><span class="name">Texas<span class="desc" data-fr="À la viande hachée" data-it="Con carne macinata di manzo">Mit Rinderhack</span></span><button type="button" class="price add" data-n="Paco Texas · 1 Stück" data-p="8.50" aria-label="Paco Texas · 1 Stück, CHF 8.50">8.50</button><button type="button" class="price add" data-n="Paco Texas · 2 Stück" data-p="16.00" aria-label="Paco Texas · 2 Stück, CHF 16.00">16.00</button><button type="button" class="price add" data-n="Paco Texas · 3 Stück" data-p="23.50" aria-label="Paco Texas · 3 Stück, CHF 23.50">23.50</button></div><div class="row c3"><span class="name">Guadalajara<span class="desc" data-fr="À l&#x27;agneau" data-it="Con agnello">Mit Lammfleisch</span></span><button type="button" class="price add" data-n="Paco Guadalajara · 1 Stück" data-p="9.50" aria-label="Paco Guadalajara · 1 Stück, CHF 9.50">9.50</button><button type="button" class="price add" data-n="Paco Guadalajara · 2 Stück" data-p="18.00" aria-label="Paco Guadalajara · 2 Stück, CHF 18.00">18.00</button><button type="button" class="price add" data-n="Paco Guadalajara · 3 Stück" data-p="26.00" aria-label="Paco Guadalajara · 3 Stück, CHF 26.00">26.00</button></div></div><div class="group"><h3 class="u-red">Exotics</h3><div class="row head c3"><span></span><span class="col"><b class="dot d1">1</b><span data-fr="1 paco">1 Paco</span></span><span class="col"><b class="dot d2">2</b><span data-fr="2 pacos">2 Pacos</span></span><span class="col"><b class="dot d3">3</b><span data-fr="3 pacos">3 Pacos</span></span></div><div class="row c3"><span class="name">Shanghai<span class="desc" data-fr="Au poulet teriyaki" data-it="Con pollo teriyaki">Mit Poulet Teriyaki</span></span><button type="button" class="price add" data-n="Paco Shanghai · 1 Stück" data-p="7.90" aria-label="Paco Shanghai · 1 Stück, CHF 7.90">7.90</button><button type="button" class="price add" data-n="Paco Shanghai · 2 Stück" data-p="15.00" aria-label="Paco Shanghai · 2 Stück, CHF 15.00">15.00</button><button type="button" class="price add" data-n="Paco Shanghai · 3 Stück" data-p="21.00" aria-label="Paco Shanghai · 3 Stück, CHF 21.00">21.00</button></div><div class="row c3"><span class="name">Istanbul<span class="desc" data-fr="Au sucuk et à la feta" data-it="Con sucuk e feta">Mit Sucuk und Feta</span></span><button type="button" class="price add" data-n="Paco Istanbul · 1 Stück" data-p="7.50" aria-label="Paco Istanbul · 1 Stück, CHF 7.50">7.50</button><button type="button" class="price add" data-n="Paco Istanbul · 2 Stück" data-p="14.00" aria-label="Paco Istanbul · 2 Stück, CHF 14.00">14.00</button><button type="button" class="price add" data-n="Paco Istanbul · 3 Stück" data-p="20.50" aria-label="Paco Istanbul · 3 Stück, CHF 20.50">20.50</button></div><div class="row c3"><span class="name">Oslo<span class="desc" data-fr="Au saumon" data-it="Con salmone">Mit Lachs</span></span><button type="button" class="price add" data-n="Paco Oslo · 1 Stück" data-p="8.50" aria-label="Paco Oslo · 1 Stück, CHF 8.50">8.50</button><button type="button" class="price add" data-n="Paco Oslo · 2 Stück" data-p="16.00" aria-label="Paco Oslo · 2 Stück, CHF 16.00">16.00</button><button type="button" class="price add" data-n="Paco Oslo · 3 Stück" data-p="23.50" aria-label="Paco Oslo · 3 Stück, CHF 23.50">23.50</button></div></div></div>
+    <div><div class="group"><h3 class="u-green">Vegetarian</h3><div class="row head c3"><span></span><span class="col"><b class="dot d1">1</b><span data-fr="1 paco">1 Paco</span></span><span class="col"><b class="dot d2">2</b><span data-fr="2 pacos">2 Pacos</span></span><span class="col"><b class="dot d3">3</b><span data-fr="3 pacos">3 Pacos</span></span></div><div class="row c3"><span class="name">London<span class="desc" data-fr="Aux épinards" data-it="Con spinaci">Mit Spinat</span></span><button type="button" class="price add" data-n="Paco London · 1 Stück" data-p="6.50" aria-label="Paco London · 1 Stück, CHF 6.50">6.50</button><button type="button" class="price add" data-n="Paco London · 2 Stück" data-p="12.50" aria-label="Paco London · 2 Stück, CHF 12.50">12.50</button><button type="button" class="price add" data-n="Paco London · 3 Stück" data-p="18.00" aria-label="Paco London · 3 Stück, CHF 18.00">18.00</button></div><div class="row c3"><span class="name">Athen<span class="desc" data-fr="Aux aubergines" data-it="Con melanzane">Mit Auberginen</span></span><button type="button" class="price add" data-n="Paco Athen · 1 Stück" data-p="6.90" aria-label="Paco Athen · 1 Stück, CHF 6.90">6.90</button><button type="button" class="price add" data-n="Paco Athen · 2 Stück" data-p="13.00" aria-label="Paco Athen · 2 Stück, CHF 13.00">13.00</button><button type="button" class="price add" data-n="Paco Athen · 3 Stück" data-p="19.00" aria-label="Paco Athen · 3 Stück, CHF 19.00">19.00</button></div><div class="row c3"><span class="name">Beirut<span class="desc" data-fr="Aux falafels" data-it="Con falafel">Mit Falafel</span></span><button type="button" class="price add" data-n="Paco Beirut · 1 Stück" data-p="6.90" aria-label="Paco Beirut · 1 Stück, CHF 6.90">6.90</button><button type="button" class="price add" data-n="Paco Beirut · 2 Stück" data-p="13.00" aria-label="Paco Beirut · 2 Stück, CHF 13.00">13.00</button><button type="button" class="price add" data-n="Paco Beirut · 3 Stück" data-p="19.00" aria-label="Paco Beirut · 3 Stück, CHF 19.00">19.00</button></div></div>
+      <p class="extra"><b>Guacamole</b> <button type="button" class="price add" data-n="Guacamole extra" data-p="1.00" aria-label="Guacamole extra, CHF 1.00">+ 1.–</button></p>
+      <p class="note" data-fr="Tous les pacos sont préparés avec coriandre fraîche, oignons rouges, salade, citron vert et mini-tortillas." data-it="Tutti i pacos sono preparati con coriandolo fresco, cipolla rossa, insalata, lime e mini tortillas.">Alle Pacos werden mit frischem Koriander, roten Zwiebeln, Salat, Limette und Mini-Tortillas zubereitet.</p>
+    </div>
+  </div>
+</section>
+
+<section class="panel" id="burrito">
+  <h2>Burrito</h2>
+  <p class="brush sm"><span>Build it your way!</span></p>
+  <form id="bb" class="builder">
+    <div class="sizes" role="radiogroup" aria-label="Grösse"><label class="size"><input type="radio" name="bb-size" id="bb-size-M" value="M" data-max="1" data-p="12.00" checked><b class="dot d1">M</b><span data-fr="1 base" data-it="1 base">1 Basis</span><strong>12.–</strong></label><label class="size"><input type="radio" name="bb-size" id="bb-size-L" value="L" data-max="2" data-p="14.00"><b class="dot d2">L</b><span data-fr="2 bases" data-it="2 basi">2 Basis</span><strong>14.–</strong></label><label class="size"><input type="radio" name="bb-size" id="bb-size-XL" value="XL" data-max="3" data-p="18.00"><b class="dot d4">XL</b><span data-fr="3 bases" data-it="3 basi">3 Basis</span><strong>18.–</strong></label></div>
+    <div class="steps">
+      <fieldset class="step"><legend><b class="dot d2">01</b><span data-fr="Base" data-it="Base">Basis</span></legend><label class="opt"><input type="checkbox" name="bb-basis" id="bb-basis-0" value="Poulet" checked><span data-it="Pollo">Poulet</span></label><label class="opt"><input type="checkbox" name="bb-basis" id="bb-basis-1" value="Chicken Nuggets"><span>Chicken Nuggets</span></label><label class="opt"><input type="checkbox" name="bb-basis" id="bb-basis-2" value="Cordon Bleu"><span>Cordon Bleu</span></label><label class="opt"><input type="checkbox" name="bb-basis" id="bb-basis-3" value="Rinderhack"><span data-fr="Viande hachée" data-it="Carne macinata">Rinderhack</span></label><label class="opt"><input type="checkbox" name="bb-basis" id="bb-basis-4" value="Pangasius"><span>Pangasius</span></label><label class="opt"><input type="checkbox" name="bb-basis" id="bb-basis-5" value="Vegetarisch"><span data-fr="Végétarien" data-it="Vegetariano">Vegetarisch</span></label><div class="sub" id="bb-veg" hidden><label class="opt"><input type="radio" name="bb-veg" id="bb-veg-0" value="Falafel" checked><span>Falafel</span></label><label class="opt"><input type="radio" name="bb-veg" id="bb-veg-1" value="Aubergine"><span data-it="Melanzana">Aubergine</span></label></div><p class="hint" id="bb-hint"></p></fieldset>
+      <fieldset class="step"><legend><b class="dot d1">02</b><span data-fr="Légumes" data-it="Verdure">Beilagen</span></legend><label class="opt"><input type="checkbox" name="bb-beilage" id="bb-beilage-0" value="Salat" checked><span data-fr="Salade" data-it="Insalata">Salat</span></label><label class="opt"><input type="checkbox" name="bb-beilage" id="bb-beilage-1" value="Tomate" checked><span data-it="Pomodoro">Tomate</span></label><label class="opt"><input type="checkbox" name="bb-beilage" id="bb-beilage-2" value="Zwiebeln" checked><span data-fr="Oignons" data-it="Cipolle">Zwiebeln</span></label><label class="opt"><input type="checkbox" name="bb-beilage" id="bb-beilage-3" value="Mais" checked><span data-fr="Maïs">Mais</span></label></fieldset>
+      <fieldset class="step"><legend><b class="dot d3">03</b><span data-fr="Fromage" data-it="Formaggio">Käse</span></legend><label class="opt"><input type="radio" name="bb-kaese" id="bb-kaese-0" value="Cheddar" checked><span>Cheddar</span></label><label class="opt"><input type="radio" name="bb-kaese" id="bb-kaese-1" value="Raclette"><span>Raclette</span></label><label class="opt"><input type="radio" name="bb-kaese" id="bb-kaese-2" value="Mozzarella"><span>Mozzarella</span></label>
+        <label class="opt plus"><input type="checkbox" id="bb-xkaese"><span data-fr="Fromage en plus + 1.–" data-it="Formaggio extra + 1.–">Extra Käse + 1.–</span></label></fieldset>
+      <fieldset class="step"><legend><b class="dot d2">04</b>Sauce</legend>
+        <label class="sel" for="bb-sauce" data-fr="Ta sauce" data-it="La tua salsa">Deine Sauce</label><select id="bb-sauce"><option>Afghan Chutney</option><option>Blanche TB</option><option>Cocktail TB</option><option>Sauce TB</option><option>Andalouse</option><option>Marrocaine</option><option>Algerian</option><option>Samurai</option><option>Beggy Burger</option><option>Barbecue</option><option>Curry</option><option>Sweet &amp; Sour</option><option>Ketchup</option><option>Mayonnaise</option></select>
+        <label class="sel" for="bb-sauce2" data-fr="Deuxième sauce + 1.–" data-it="Seconda salsa + 1.–">Zweite Sauce + 1.–</label><select id="bb-sauce2"><option value="">–</option><option>Afghan Chutney</option><option>Blanche TB</option><option>Cocktail TB</option><option>Sauce TB</option><option>Andalouse</option><option>Marrocaine</option><option>Algerian</option><option>Samurai</option><option>Beggy Burger</option><option>Barbecue</option><option>Curry</option><option>Sweet &amp; Sour</option><option>Ketchup</option><option>Mayonnaise</option></select></fieldset>
+    </div>
+    <button type="submit" class="btn-add"><span data-fr="Ajouter le burrito" data-it="Aggiungi il burrito">Burrito in den Warenkorb</span> · <span id="bb-price">12.00</span></button>
+  </form>
+</section>
+
+<section class="panel" id="pizza">
+  <h2>Pizza</h2>
+  <p class="brush sm"><span data-fr="Nos pizzas portent aussi des noms de villes." data-it="Anche le nostre pizze portano nomi di città.">Auch unsere Pizzas tragen Städtenamen.</span></p>
+  <div class="group"><div class="row head c2"><span></span><span class="col"><span>M · 32 cm</span></span><span class="col"><span>L · 40 cm</span></span></div><div class="row c2"><span class="name">Pisa<span class="desc" data-fr="Sauce tomate, mozzarella" data-it="Salsa di pomodoro, mozzarella">Tomatensauce, Mozzarella</span></span><button type="button" class="price add" data-n="Pizza Pisa · M 32 cm" data-p="13.90" aria-label="Pizza Pisa · M 32 cm, CHF 13.90">13.90</button><button type="button" class="price add" data-n="Pizza Pisa · L 40 cm" data-p="25.90" aria-label="Pizza Pisa · L 40 cm, CHF 25.90">25.90</button></div><div class="row c2"><span class="name">Funghi<span class="desc" data-fr="Champignons, mozzarella, sauce tomate" data-it="Funghi, mozzarella, salsa di pomodoro">Champignons, Mozzarella, Tomatensauce</span></span><button type="button" class="price add" data-n="Pizza Funghi · M 32 cm" data-p="13.90" aria-label="Pizza Funghi · M 32 cm, CHF 13.90">13.90</button><button type="button" class="price add" data-n="Pizza Funghi · L 40 cm" data-p="25.90" aria-label="Pizza Funghi · L 40 cm, CHF 25.90">25.90</button></div><div class="row c2"><span class="name">Tokyo<span class="desc" data-fr="Thon, oignons rouges, sauce tomate, mozzarella" data-it="Tonno, cipolla rossa, salsa di pomodoro, mozzarella">Thunfisch, rote Zwiebeln, Tomatensauce, Mozzarella</span></span><button type="button" class="price add" data-n="Pizza Tokyo · M 32 cm" data-p="15.90" aria-label="Pizza Tokyo · M 32 cm, CHF 15.90">15.90</button><button type="button" class="price add" data-n="Pizza Tokyo · L 40 cm" data-p="27.90" aria-label="Pizza Tokyo · L 40 cm, CHF 27.90">27.90</button></div><div class="row c2"><span class="name">Biel/Bienne<span class="desc" data-fr="Escalope de poulet, mozzarella, sauce tomate" data-it="Cotoletta di pollo, mozzarella, salsa di pomodoro">Pouletschnitzel, Mozzarella, Tomatensauce</span></span><button type="button" class="price add" data-n="Pizza Biel/Bienne · M 32 cm" data-p="15.90" aria-label="Pizza Biel/Bienne · M 32 cm, CHF 15.90">15.90</button><button type="button" class="price add" data-n="Pizza Biel/Bienne · L 40 cm" data-p="27.90" aria-label="Pizza Biel/Bienne · L 40 cm, CHF 27.90">27.90</button></div><div class="row c2"><span class="name">Mexicana<span class="desc" data-fr="Poulet grillé, sauce tomate, mozzarella" data-it="Pollo alla griglia, salsa di pomodoro, mozzarella">Grilliertes Poulet, Tomatensauce, Mozzarella</span></span><button type="button" class="price add" data-n="Pizza Mexicana · M 32 cm" data-p="15.90" aria-label="Pizza Mexicana · M 32 cm, CHF 15.90">15.90</button><button type="button" class="price add" data-n="Pizza Mexicana · L 40 cm" data-p="27.90" aria-label="Pizza Mexicana · L 40 cm, CHF 27.90">27.90</button></div><div class="row c2"><span class="name">Texas<span class="desc" data-fr="Viande hachée, poivrons, fromage" data-it="Carne macinata, peperoni, formaggio">Rinderhack, Peperoni, Käse</span></span><button type="button" class="price add" data-n="Pizza Texas · M 32 cm" data-p="17.90" aria-label="Pizza Texas · M 32 cm, CHF 17.90">17.90</button><button type="button" class="price add" data-n="Pizza Texas · L 40 cm" data-p="29.90" aria-label="Pizza Texas · L 40 cm, CHF 29.90">29.90</button></div><div class="row c2"><span class="name">California<span class="desc" data-fr="Poulet, cheddar" data-it="Pollo, cheddar">Poulet, Cheddar</span></span><button type="button" class="price add" data-n="Pizza California · M 32 cm" data-p="17.90" aria-label="Pizza California · M 32 cm, CHF 17.90">17.90</button><button type="button" class="price add" data-n="Pizza California · L 40 cm" data-p="29.90" aria-label="Pizza California · L 40 cm, CHF 29.90">29.90</button></div><div class="row c2"><span class="name">Istanbul<span class="desc" data-fr="Sucuk, feta, sauce tomate" data-it="Sucuk, feta, salsa di pomodoro">Sucuk, Feta, Tomatensauce</span></span><button type="button" class="price add" data-n="Pizza Istanbul · M 32 cm" data-p="17.90" aria-label="Pizza Istanbul · M 32 cm, CHF 17.90">17.90</button><button type="button" class="price add" data-n="Pizza Istanbul · L 40 cm" data-p="29.90" aria-label="Pizza Istanbul · L 40 cm, CHF 29.90">29.90</button></div><div class="row c2"><span class="name">Athen<span class="desc" data-fr="Aubergines, feta, olives, tomates cerises" data-it="Melanzane, feta, olive, pomodorini">Auberginen, Feta, Oliven, Cherry-Tomaten</span></span><button type="button" class="price add" data-n="Pizza Athen · M 32 cm" data-p="17.90" aria-label="Pizza Athen · M 32 cm, CHF 17.90">17.90</button><button type="button" class="price add" data-n="Pizza Athen · L 40 cm" data-p="29.50" aria-label="Pizza Athen · L 40 cm, CHF 29.50">29.50</button></div><div class="row c2"><span class="name">Oslo<span class="desc" data-fr="Saumon, mozzarella" data-it="Salmone, mozzarella">Lachs, Mozzarella</span></span><button type="button" class="price add" data-n="Pizza Oslo · M 32 cm" data-p="19.90" aria-label="Pizza Oslo · M 32 cm, CHF 19.90">19.90</button><button type="button" class="price add" data-n="Pizza Oslo · L 40 cm" data-p="31.50" aria-label="Pizza Oslo · L 40 cm, CHF 31.50">31.50</button></div><div class="row c2"><span class="name">Guadalajara<span class="desc" data-fr="Agneau, oignons, piments" data-it="Agnello, cipolle, peperoni piccanti">Lammfleisch, Zwiebeln, scharfe Peperoni</span></span><button type="button" class="price add" data-n="Pizza Guadalajara · M 32 cm" data-p="20.00" aria-label="Pizza Guadalajara · M 32 cm, CHF 20.00">20.00</button><button type="button" class="price add" data-n="Pizza Guadalajara · L 40 cm" data-p="32.00" aria-label="Pizza Guadalajara · L 40 cm, CHF 32.00">32.00</button></div></div>
+</section>
+
+<section class="panel" id="mehr">
+  <h2 data-fr="Snacks &amp; boissons" data-it="Snack e bevande">Snacks &amp; Getränke</h2>
+  <div class="cols">
+    <div>
+      <div class="group"><h3 class="u-red" data-fr="Menus" data-it="Menu">Menüs</h3><div class="row c1"><span class="name sm"><span data-fr="Menu Pacos Mexicana : 2 pacos Mexicana, frites avec sauce, boisson en canette" data-it="Menu Pacos Mexicana: 2 pacos Mexicana, patatine con salsa, bibita in lattina">Pacos Mexicana Menü: 2 Mexicana Pacos, Pommes mit Sauce, Dosengetränk</span></span><button type="button" class="price add" data-n="Pacos Mexicana Menü" data-p="21.90" aria-label="Pacos Mexicana Menü, CHF 21.90">21.90</button></div><div class="row c1"><span class="name sm"><span data-fr="Menu Burrito M : burrito M, frites avec sauce, boisson en canette" data-it="Menu Burrito M: burrito M, patatine con salsa, bibita in lattina">Burrito M Menü: Burrito M, Pommes mit Sauce, Dosengetränk</span></span><button type="button" class="price add" data-n="Burrito M Menü" data-p="19.90" aria-label="Burrito M Menü, CHF 19.90">19.90</button></div></div>
+      <div class="group"><h3 class="u-red">Box</h3><div class="row c1"><span class="name sm"><span data-fr="Box frites avec chicken nuggets" data-it="Box di patatine con chicken nuggets">Pommes-Box mit Chicken Nuggets</span></span><button type="button" class="price add" data-n="Pommes-Box mit Chicken Nuggets" data-p="11.00" aria-label="Pommes-Box mit Chicken Nuggets, CHF 11.00">11.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Box frites avec falafels maison" data-it="Box di patatine con falafel fatti in casa">Pommes-Box mit hausgemachter Falafel</span></span><button type="button" class="price add" data-n="Pommes-Box mit hausgemachter Falafel" data-p="11.00" aria-label="Pommes-Box mit hausgemachter Falafel, CHF 11.00">11.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Box frites avec pangasius" data-it="Box di patatine con pangasio">Pommes-Box mit Pangasius</span></span><button type="button" class="price add" data-n="Pommes-Box mit Pangasius" data-p="10.00" aria-label="Pommes-Box mit Pangasius, CHF 10.00">10.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Box frites avec cordon bleu" data-it="Box di patatine con cordon bleu">Pommes-Box mit Cordon Bleu</span></span><button type="button" class="price add" data-n="Pommes-Box mit Cordon Bleu" data-p="13.00" aria-label="Pommes-Box mit Cordon Bleu, CHF 13.00">13.00</button></div></div>
+      <div class="group"><h3 class="u-red" data-it="Snack">Snacks</h3><div class="row c1"><span class="name sm"><span data-fr="Frites petites" data-it="Patatine fritte piccole">Pommes frites klein</span></span><button type="button" class="price add" data-n="Pommes frites klein" data-p="6.50" aria-label="Pommes frites klein, CHF 6.50">6.50</button></div><div class="row c1"><span class="name sm"><span data-fr="Frites grandes" data-it="Patatine fritte grandi">Pommes frites gross</span></span><button type="button" class="price add" data-n="Pommes frites gross" data-p="8.00" aria-label="Pommes frites gross, CHF 8.00">8.00</button></div></div>
+    </div>
+    <div>
+      <div class="group"><h3 class="u-red" data-it="Dessert">Desserts</h3><div class="row c1"><span class="name sm"><span>Tiramisu</span></span><button type="button" class="price add" data-n="Tiramisu" data-p="6.00" aria-label="Tiramisu, CHF 6.00">6.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Donut chocolat ou fraise" data-it="Donut al cioccolato o alla fragola">Donut Schoko oder Erdbeer</span></span><button type="button" class="price add" data-n="Donut Schoko oder Erdbeer" data-p="3.00" aria-label="Donut Schoko oder Erdbeer, CHF 3.00">3.00</button></div></div>
+      <div class="group"><h3 class="u-red" data-fr="Boissons" data-it="Bevande">Getränke</h3><div class="row c1"><span class="name sm"><span data-fr="Canette 0.33 l : Coca-Cola, Coca-Cola Zero, Fanta, Uludag, Ayran" data-it="Lattina 0.33 l: Coca-Cola, Coca-Cola Zero, Fanta, Uludag, Ayran">Dose 0.33 l: Coca-Cola, Coca-Cola Zero, Fanta, Uludag, Ayran</span></span><button type="button" class="price add" data-n="Dose 0.33 l" data-p="3.00" aria-label="Dose 0.33 l, CHF 3.00">3.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Bouteille 0.5 l : Coca-Cola, Zero, Fanta, Fusetea (Black, Lemon, Peach), Ramseier schorle, Valser, Uludag" data-it="Bottiglia 0.5 l: Coca-Cola, Zero, Fanta, Fusetea (Black, Lemon, Peach), Ramseier succo di mela frizzante, Valser, Uludag">Flasche 0.5 l: Coca-Cola, Zero, Fanta, Fusetea (Black, Lemon, Peach), Ramseier Apfelschorle, Valser, Uludag</span></span><button type="button" class="price add" data-n="Flasche 0.5 l" data-p="4.00" aria-label="Flasche 0.5 l, CHF 4.00">4.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Bouteille 1.5 l : Coca-Cola Zero, Fanta, Fusetea (Black, Lemon, Peach)" data-it="Bottiglia 1.5 l: Coca-Cola Zero, Fanta, Fusetea (Black, Lemon, Peach)">Flasche 1.5 l: Coca-Cola Zero, Fanta, Fusetea (Black, Lemon, Peach)</span></span><button type="button" class="price add" data-n="Flasche 1.5 l" data-p="6.00" aria-label="Flasche 1.5 l, CHF 6.00">6.00</button></div><div class="row c1"><span class="name sm"><span>Red Bull 0.33 l</span></span><button type="button" class="price add" data-n="Red Bull 0.33 l" data-p="5.00" aria-label="Red Bull 0.33 l, CHF 5.00">5.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Jus de mangue, jus de goyave" data-it="Succo di mango, succo di guava">Mangosaft, Guavasaft</span></span><button type="button" class="price add" data-n="Mangosaft, Guavasaft" data-p="5.00" aria-label="Mangosaft, Guavasaft, CHF 5.00">5.00</button></div><div class="row c1"><span class="name sm"><span data-fr="Bière : Feldschlösschen 0.5 l" data-it="Birra: Feldschlösschen 0.5 l">Bier: Feldschlösschen 0.5 l</span></span><button type="button" class="price add" data-n="Bier" data-p="6.00" aria-label="Bier, CHF 6.00">6.00</button></div><div class="row c1"><span class="name sm"><span>Corona Extra 0.355 l</span></span><button type="button" class="price add" data-n="Corona Extra 0.355 l" data-p="7.00" aria-label="Corona Extra 0.355 l, CHF 7.00">7.00</button></div>
+        <p class="note" data-fr="Indique la boisson souhaitée dans la remarque de ta commande." data-it="Indica la bevanda desiderata nella nota del tuo ordine.">Schreib die gewünschte Sorte in die Bemerkung deiner Bestellung.</p></div>
+    </div>
+  </div>
+  <p class="note" data-fr="Prix en CHF." data-it="Prezzi in CHF.">Preise in CHF.</p>
+</section>
+
+<section class="panel order" id="bestellen">
+  <h2 data-fr="Ta commande" data-it="Il tuo ordine">Deine Bestellung</h2>
+  <p class="brush sm"><span data-fr="À l'emporter · Paiement sur place" data-it="Ritiro · Pagamento in loco">Zur Abholung · Bezahlung im Lokal</span></p>
+  <div class="cols">
+    <div>
+      <ul id="cart-list" class="cart-list"></ul>
+      <p id="cart-empty" class="note" data-fr="Ton panier est vide. Touche un prix dans la carte pour ajouter un plat." data-it="Il carrello è vuoto. Tocca un prezzo nel menu per aggiungere un piatto.">Dein Warenkorb ist leer. Tippe in der Karte auf einen Preis, um ein Gericht hinzuzufügen.</p>
+      <p class="total"><span data-it="Totale">Total</span><strong id="cart-total">CHF 0.00</strong></p>
+    </div>
+    <form id="order-form" class="order-form">
+      <label for="o-name" data-fr="Ton nom" data-it="Il tuo nome">Dein Name</label>
+      <input id="o-name" type="text" autocomplete="name">
+      <label for="o-phone" data-fr="Ton numéro de portable" data-it="Il tuo numero di cellulare">Deine Handynummer</label>
+      <input id="o-phone" type="tel" autocomplete="tel" inputmode="tel">
+      <label for="o-time" data-fr="Heure de retrait" data-it="Orario di ritiro">Abholzeit</label>
+      <select id="o-time"></select>
+      <label for="o-note" data-fr="Remarque (boisson, sans coriandre, …)" data-it="Nota (bevanda, senza coriandolo, …)">Bemerkung (Getränkesorte, ohne Koriander, …)</label>
+      <textarea id="o-note" rows="2"></textarea>
+      <p id="o-err" class="err" role="alert"></p>
+      <a id="o-send" class="btn-add" href="#bestellen" target="_blank" rel="noopener" data-fr="Commander par WhatsApp" data-it="Ordina via WhatsApp">Per WhatsApp bestellen</a>
+      <p class="note" data-fr="WhatsApp s'ouvre avec ta commande. Envoie le message : nous confirmons l'heure de retrait." data-it="WhatsApp si apre con il tuo ordine. Invia il messaggio: ti confermiamo l&#x27;orario di ritiro.">WhatsApp öffnet sich mit deiner Bestellung. Sende die Nachricht ab, wir bestätigen dir die Abholzeit.</p>
+    </form>
+  </div>
+</section>
+
+<section class="panel" id="besuch">
+  <h2 data-fr="Où nous trouver" data-it="Dove trovarci">Hier findest du uns</h2>
+  <div class="visit">
+    <div><h3 class="u-red" data-it="Indirizzo">Adresse</h3><p class="big" data-fr="Quai du Bas 76">Unterer Quai 76</p><p>2502 Biel/Bienne</p></div>
+    <div><h3 class="u-red" data-fr="Horaires" data-it="Orari">Öffnungszeiten</h3><p class="hr"><span data-fr="Lundi" data-it="Lunedì">Montag</span><b class="closed" data-fr="Fermé" data-it="Chiuso">Geschlossen</b></p><p class="hr"><span data-fr="Mardi – jeudi" data-it="Martedì – giovedì">Dienstag – Donnerstag</span><b>11–14 · 17–23</b></p><p class="hr"><span data-fr="Vendredi" data-it="Venerdì">Freitag</span><b>11–14 · 17–24</b></p><p class="hr"><span data-fr="Samedi" data-it="Sabato">Samstag</span><b>12–24</b></p><p class="hr"><span data-fr="Dimanche" data-it="Domenica">Sonntag</span><b>17–24</b></p></div>
+    <div><h3 class="u-red" data-fr="Téléphone" data-it="Telefono">Telefon</h3><p class="big"><a href="tel:+41325368336">032 536 83 36</a></p></div>
+    <div><h3 class="u-red" data-fr="Livraison" data-it="Consegna">Lieferung</h3><p data-fr="Nous livrons via nos partenaires :" data-it="Consegniamo tramite i nostri partner:">Geliefert wird über unsere Partner:</p><p class="big"><a href="https://www.ubereats.com/ch/store/texas-best-home-of-pizzas-%26-tacos/tTJCbhAoV92DjHs7UrH_mA" target="_blank" rel="noopener">Uber Eats</a> · <a href="https://www.just-eat.ch/speisekarte/texas-best-home-of-pizzas-tacos" target="_blank" rel="noopener">Just Eat</a></p></div>
+  </div>
+  <ul class="badges">
+    <li data-fr="Ingrédients frais, préparés chaque jour" data-it="Ingredienti freschi, preparati ogni giorno">Frische Zutaten, täglich zubereitet</li>
+    <li>Fresh made to order</li>
+    <li data-fr="Fait avec amour pour toi" data-it="Fatto con amore per te">Mit viel Liebe für dich gemacht</li>
+  </ul>
+</section>
+</main>
+<footer><p>Texas Best · Home of Pizza &amp; Paco · Unterer Quai 76 · 2502 Biel/Bienne</p></footer>
+
+<a class="cartbar" id="cartbar" href="#bestellen" hidden>
+  <span><b id="bar-count">0</b> <span data-fr="dans le panier" data-it="nel carrello">im Warenkorb</span></span>
+  <span><strong id="bar-total">CHF 0.00</strong> · <span data-fr="Commander" data-it="Ordina">Bestellen</span> →</span>
+</a>
+<script>(function () {
+  var WHATSAPP = '41782208465';
+  var $ = function (id) { return document.getElementById(id); };
+  var lang = 'de';
+  var T = {
+    de: { days: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'], asap: 'So bald wie möglich', uhr: ' Uhr', empty: 'Dein Warenkorb ist leer.', need: 'Bitte gib deinen Namen und deine Handynummer an.',
+          basis: function (n) { return n === 1 ? 'Wähle 1 Basis.' : 'Wähle bis zu ' + n + ' Basis.'; }, needBasis: 'Bitte wähle mindestens eine Basis.' },
+    it: { asap: 'Il prima possibile', uhr: '', empty: 'Il carrello è vuoto.', need: 'Indica il tuo nome e il tuo numero di cellulare.',
+          days: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
+          basis: function (n) { return n === 1 ? 'Scegli 1 base.' : 'Scegli fino a ' + n + ' basi.'; }, needBasis: 'Scegli almeno una base.' },
+    fr: { days: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'], asap: 'Dès que possible', uhr: '', empty: 'Ton panier est vide.', need: 'Indique ton nom et ton numéro de portable.',
+          basis: function (n) { return n === 1 ? 'Choisis 1 base.' : "Choisis jusqu'à " + n + ' bases.'; }, needBasis: 'Choisis au moins une base.' }
+  };
+
+  /* ---------- Sprache ---------- */
+  var nodes = document.querySelectorAll('[data-fr],[data-it]');
+  nodes.forEach(function (n) { n.setAttribute('data-de', n.textContent); });
+  function setLang(l) {
+    lang = l;
+    nodes.forEach(function (n) { n.textContent = n.getAttribute('data-' + l) || n.getAttribute('data-de'); });
+    document.documentElement.lang = l;
+    $('lang-de').setAttribute('aria-pressed', String(l === 'de'));
+    $('lang-fr').setAttribute('aria-pressed', String(l === 'fr'));
+    $('lang-it').setAttribute('aria-pressed', String(l === 'it'));
+    try { localStorage.setItem('tb-lang', l); } catch (e) {}
+    fillTimes(); burritoUpdate(); render();
+  }
+  $('lang-de').addEventListener('click', function () { setLang('de'); });
+  $('lang-fr').addEventListener('click', function () { setLang('fr'); });
+  $('lang-it').addEventListener('click', function () { setLang('it'); });
+
+  /* ---------- Warenkorb ---------- */
+  var cart = [];
+  try { cart = JSON.parse(localStorage.getItem('tb-cart') || '[]'); } catch (e) { cart = []; }
+  function money(x) { return x.toFixed(2); }
+  function total() { return cart.reduce(function (s, i) { return s + i.p * i.q; }, 0); }
+  function count() { return cart.reduce(function (s, i) { return s + i.q; }, 0); }
+  function addItem(n, p) {
+    var hit = cart.filter(function (i) { return i.n === n; })[0];
+    if (hit) hit.q += 1; else cart.push({ n: n, p: p, q: 1 });
+    render(true);
+  }
+  function render(bump) {
+    try { localStorage.setItem('tb-cart', JSON.stringify(cart)); } catch (e) {}
+    var list = $('cart-list');
+    list.textContent = '';
+    cart.forEach(function (it, idx) {
+      var li = document.createElement('li');
+      var name = document.createElement('span'); name.className = 'ci-name'; name.textContent = it.n;
+      var qty = document.createElement('span'); qty.className = 'ci-qty';
+      var minus = document.createElement('button'); minus.type = 'button'; minus.textContent = '−'; minus.setAttribute('aria-label', 'Weniger: ' + it.n);
+      var num = document.createElement('b'); num.textContent = it.q;
+      var plus = document.createElement('button'); plus.type = 'button'; plus.textContent = '+'; plus.setAttribute('aria-label', 'Mehr: ' + it.n);
+      minus.addEventListener('click', function () { it.q -= 1; if (it.q < 1) cart.splice(idx, 1); render(); });
+      plus.addEventListener('click', function () { it.q += 1; render(); });
+      qty.appendChild(minus); qty.appendChild(num); qty.appendChild(plus);
+      var price = document.createElement('span'); price.className = 'ci-price'; price.textContent = money(it.p * it.q);
+      li.appendChild(name); li.appendChild(qty); li.appendChild(price);
+      list.appendChild(li);
+    });
+    $('cart-empty').hidden = cart.length > 0;
+    $('cart-total').textContent = 'CHF ' + money(total());
+    $('bar-total').textContent = 'CHF ' + money(total());
+    $('bar-count').textContent = count();
+    var bar = $('cartbar');
+    bar.hidden = cart.length === 0;
+    if (bump) { bar.classList.remove('bump'); void bar.offsetWidth; bar.classList.add('bump'); }
+    updateLink();
+  }
+  document.querySelectorAll('button.add').forEach(function (b) {
+    b.addEventListener('click', function () {
+      addItem(b.getAttribute('data-n'), parseFloat(b.getAttribute('data-p')));
+      b.classList.remove('hit'); void b.offsetWidth; b.classList.add('hit');
+    });
+  });
+
+  /* ---------- Burrito-Baukasten ---------- */
+  var bb = $('bb');
+  function bbSize() { return bb.querySelector('input[name="bb-size"]:checked'); }
+  function bbChecked(name) {
+    return Array.prototype.slice.call(bb.querySelectorAll('input[name="' + name + '"]:checked')).map(function (i) { return i.value; });
+  }
+  function bbPrice() {
+    return parseFloat(bbSize().getAttribute('data-p')) + ($('bb-xkaese').checked ? 1 : 0) + ($('bb-sauce2').value ? 1 : 0);
+  }
+  function burritoUpdate() {
+    var max = parseInt(bbSize().getAttribute('data-max'), 10);
+    var boxes = Array.prototype.slice.call(bb.querySelectorAll('input[name="bb-basis"]'));
+    var on = boxes.filter(function (b) { return b.checked; });
+    while (on.length > max) { on.pop().checked = false; }
+    boxes.forEach(function (b) { b.disabled = !b.checked && on.length >= max; });
+    $('bb-veg').hidden = !$('bb-basis-5').checked;
+    $('bb-hint').textContent = T[lang].basis(max);
+    $('bb-price').textContent = money(bbPrice());
+  }
+  bb.addEventListener('change', burritoUpdate);
+  bb.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var basis = bbChecked('bb-basis');
+    basis = basis.map(function (v) { return v === 'Vegetarisch' ? 'Vegetarisch (' + bbChecked('bb-veg')[0] + ')' : v; });
+    if (!basis.length) { $('bb-hint').textContent = T[lang].needBasis; return; }
+    var parts = [basis.join(' + ')];
+    var bei = bbChecked('bb-beilage'); if (bei.length) parts.push(bei.join(', '));
+    parts.push(bbChecked('bb-kaese')[0] + ($('bb-xkaese').checked ? ' + Extra Käse' : ''));
+    parts.push($('bb-sauce').value + ($('bb-sauce2').value ? ' + ' + $('bb-sauce2').value : ''));
+    addItem('Burrito ' + bbSize().value + ' · ' + parts.join(' · '), bbPrice());
+  });
+
+  /* ---------- Abholzeit ---------- */
+  var OPEN = {"1": [], "2": [[11, 14], [17, 23]], "3": [[11, 14], [17, 23]], "4": [[11, 14], [17, 23]], "5": [[11, 14], [17, 24]], "6": [[12, 24]], "0": [[17, 24]]};
+  function fillTimes() {
+    var sel = $('o-time'), keep = sel.value, now = new Date(), made = 0;
+    sel.textContent = '';
+    function opt(value, text) { var o = document.createElement('option'); o.value = value; o.textContent = text; sel.appendChild(o); }
+    for (var off = 0; off < 7 && made === 0; off++) {
+      var day = new Date(now.getFullYear(), now.getMonth(), now.getDate() + off);
+      var wins = OPEN[String(day.getDay())] || [];
+      var earliest = now.getTime() + 20 * 60000;
+      wins.forEach(function (w) {
+        var start = new Date(day.getTime() + w[0] * 3600000), end = new Date(day.getTime() + w[1] * 3600000);
+        if (off === 0 && now >= start && now < end && made === 0 && end.getTime() - now.getTime() > 20 * 60000) { opt('so bald wie möglich', T[lang].asap); made++; }
+        var s = new Date(Math.max(start.getTime() + 15 * 60000, Math.ceil(earliest / 900000) * 900000));
+        for (; s.getTime() <= end.getTime() - 15 * 60000 && made < 16; s = new Date(s.getTime() + 900000)) {
+          var hh = ('0' + s.getHours()).slice(-2) + ':' + ('0' + s.getMinutes()).slice(-2);
+          var de = (off === 0 ? '' : T.de.days[day.getDay()] + ' ') + hh + ' Uhr';
+          opt(de, (off === 0 ? '' : T[lang].days[day.getDay()] + ' ') + hh + T[lang].uhr);
+          made++;
+        }
+      });
+    }
+    if (keep) sel.value = keep;
+    if (!sel.value && sel.options.length) sel.selectedIndex = 0;
+  }
+
+  /* ---------- Bestellung per WhatsApp ---------- */
+  function message() {
+    var lines = ['Neue Abholbestellung – Texas Best', 'Name: ' + $('o-name').value.trim(), 'Telefon: ' + $('o-phone').value.trim(),
+      'Abholzeit: ' + $('o-time').value, ''];
+    cart.forEach(function (i) { lines.push(i.q + '× ' + i.n + ' – ' + money(i.p * i.q)); });
+    lines.push('', 'Total: CHF ' + money(total()), 'Bezahlung bei Abholung');
+    var note = $('o-note').value.trim();
+    if (note) lines.push('Bemerkung: ' + note);
+    return lines.join('\n');
+  }
+  function updateLink() {
+    $('o-send').href = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(message());
+  }
+  ['o-name', 'o-phone', 'o-time', 'o-note'].forEach(function (id) { $(id).addEventListener('input', updateLink); });
+  $('o-send').addEventListener('click', function (ev) {
+    var err = '';
+    if (!cart.length) err = T[lang].empty;
+    else if (!$('o-name').value.trim() || !$('o-phone').value.trim()) err = T[lang].need;
+    $('o-err').textContent = err;
+    if (err) { ev.preventDefault(); return; }
+    updateLink();
+  });
+  $('order-form').addEventListener('submit', function (ev) { ev.preventDefault(); });
+
+  /* ---------- Gewürzstaub im Kopfbereich ---------- */
+  (function () {
+    var c = $('spice'), ctx = c.getContext && c.getContext('2d');
+    if (!ctx) return;
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var w, h, bits = [], cols = ['rgba(255,255,255,.55)', 'rgba(240,160,60,.75)', 'rgba(255,214,120,.6)', 'rgba(120,10,8,.6)'];
+    function size() {
+      var r = c.parentNode.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = r.width; h = r.height; c.width = w * dpr; c.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function make() {
+      bits = [];
+      var n = Math.round(Math.min(90, w / 9));
+      for (var i = 0; i < n; i++) {
+        bits.push({ x: Math.random() * w, y: Math.random() * h, r: 1 + Math.random() * 3.5, len: Math.random() < 0.3 ? 6 + Math.random() * 10 : 0,
+          a: Math.random() * 6.3, va: (Math.random() - 0.5) * 0.02, vy: 0.15 + Math.random() * 0.5, vx: (Math.random() - 0.5) * 0.3, c: cols[i % cols.length] });
+      }
+    }
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      bits.forEach(function (b) {
+        ctx.save(); ctx.translate(b.x, b.y); ctx.rotate(b.a); ctx.fillStyle = b.c;
+        if (b.len) { ctx.beginPath(); ctx.ellipse(0, 0, b.len, b.r, 0, 0, 6.3); ctx.fill(); }
+        else { ctx.beginPath(); ctx.arc(0, 0, b.r, 0, 6.3); ctx.fill(); }
+        ctx.restore();
+        b.y += b.vy; b.x += b.vx; b.a += b.va;
+        if (b.y > h + 12) { b.y = -12; b.x = Math.random() * w; }
+      });
+      if (!still) requestAnimationFrame(draw);
+    }
+    size(); make(); draw();
+    window.addEventListener('resize', function () { size(); make(); if (still) draw(); });
+  })();
+
+  /* ---------- Start ---------- */
+  var saved = null;
+  try { saved = localStorage.getItem('tb-lang'); } catch (e) {}
+  fillTimes(); burritoUpdate(); render();
+  if (saved === 'fr' || saved === 'it') setLang(saved);
+})();
+</script>
+</body>
+</html>
