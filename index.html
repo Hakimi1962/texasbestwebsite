@@ -201,6 +201,12 @@ footer{padding-bottom:96px}
 
 .sub{margin:2px 0 4px 1.9rem;padding-left:10px;border-left:3px solid var(--green)}
 .sub[hidden]{display:none}
+
+footer{font-family:var(--body);font-weight:400;letter-spacing:0;text-transform:none;text-align:left;max-width:1080px;margin:0 auto;padding:44px 20px 100px}
+.legal{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px 48px}
+.legal h2{font-family:var(--label);font-weight:600;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.legal p{margin-bottom:10px;font-size:.95rem;max-width:52ch}
+.fine{margin-top:22px;font-family:var(--label);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -319,7 +325,20 @@ footer{padding-bottom:96px}
   </ul>
 </section>
 </main>
-<footer><p>Texas Best · Home of Pizza &amp; Paco · Unterer Quai 76 · 2502 Biel/Bienne</p></footer>
+<footer id="impressum">
+  <div class="legal">
+    <div>
+      <h2 data-fr="Mentions légales" data-it="Note legali">Impressum</h2>
+      <p>Texas Best GmbH<br>Unterer Quai 76<br>2502 Biel/Bienne</p>
+      <p><span data-fr="Téléphone" data-it="Telefono">Telefon</span>: <a href="tel:+41325368336">032 536 83 36</a><br>E-Mail: <a href="mailto:sarahhak1@hotmail.com">sarahhak1@hotmail.com</a></p>
+    </div>
+    <div>
+      <h2 data-fr="Protection des données" data-it="Protezione dei dati">Datenschutz</h2>
+      <p data-fr="Ce site enregistre ta langue et ton panier uniquement dans ton navigateur. Lors d'une commande, tu nous envoies ton nom, ton numéro et ta commande par WhatsApp ; nous les utilisons uniquement pour traiter la commande. Les polices sont chargées depuis Google Fonts." data-it="Questo sito salva la tua lingua e il tuo carrello solo nel tuo browser. Con un ordine ci invii nome, numero di cellulare e ordine tramite WhatsApp; li usiamo solo per gestire l&#x27;ordine. I caratteri sono caricati da Google Fonts.">Diese Website speichert deine Sprache und deinen Warenkorb nur in deinem Browser. Bei einer Bestellung sendest du uns Name, Handynummer und Bestellung per WhatsApp; wir verwenden sie nur, um die Bestellung abzuwickeln. Die Schriften werden von Google Fonts geladen.</p>
+    </div>
+  </div>
+  <p class="fine">Texas Best · Home of Pizza &amp; Paco</p>
+</footer>
 
 <a class="cartbar" id="cartbar" href="#bestellen" hidden>
   <span><b id="bar-count">0</b> <span data-fr="dans le panier" data-it="nel carrello">im Warenkorb</span></span>
